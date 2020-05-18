@@ -10,11 +10,9 @@
 
 <script>
 import MainTabBar from "./components/content/MainTabBar";
-import router from "./router/index";
 
 export default {
   name: "App",
-  router,
   components: {
     MainTabBar
   }

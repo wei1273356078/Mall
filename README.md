@@ -1,4 +1,4 @@
-# vuecli3test
+# Mobile shopping mall
 
 ## Project setup
 ```

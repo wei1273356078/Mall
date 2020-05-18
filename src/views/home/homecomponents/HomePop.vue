@@ -1,6 +1,6 @@
 <template>
 <div class="pop">
-  <div class="pop-item">
+  <div class="pop-item" @click="itemImg">
     <img @load="imgItem" src="~assets/img/home/popular.png" alt="">
     <img @load="imgItem" src="~assets/img/home/popular.png" alt="">
     <img @load="imgItem" src="~assets/img/home/popular.png" alt="">
@@ -32,10 +32,19 @@
 <script>
 export default {
   name: 'HomePop',
+  data () {
+    return {
+      id: 1
+    }
+  },
   methods: {
     imgItem() {
       this.$bus.$emit('imgItem')
       // console.log('------');
+    },
+    itemImg() {
+      this.$router.push('/detail/'+ this.id)
+      // console.log(123);
     }
   }
 }

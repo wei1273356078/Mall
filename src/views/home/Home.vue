@@ -25,8 +25,8 @@
         ref="tabControl2"
       />
       <HomePop v-if="show0" />
-      <HomeJX v-else-if="show1" />
-      <HomeNew v-else />
+      <HomeNew v-else-if="show1" />
+      <HomeJX v-else />
       <HomeText class="home-text" />
     </BScroll>
     <HomeTop class="home-top" @click.native="homeTop" v-show="isShow" />
@@ -100,7 +100,8 @@ export default {
   },
   deactivated () {
     // 设置离开时的位置
-    this.saveScrollY = this.$refs.scroll1.scroll.y
+    this.saveScrollY = this.$refs.scroll1.scroll.y;
+    // console.log(this.saveScrollY)
   },
   methods: {
     homeBannerImg() {

@@ -6,15 +6,15 @@
         <img slot="item-icon-active" src="~assets/img/tabbar/home_active.png" alt="">
         <div slot="item-text">首页</div>
       </tab-bar-item>
-      <tab-bar-item path='/collect' activeColor='orange'>
-        <img slot="item-icon" src="~assets/img/tabbar/collect.png" alt="">
-        <img slot="item-icon-active" src="~assets/img/tabbar/collect_active.png" alt="">
-        <div slot="item-text">收藏</div>
-      </tab-bar-item>
       <tab-bar-item path='/category' activeColor='orange'>
         <img slot="item-icon" src="~assets/img/tabbar/category.png" alt="">
         <img slot="item-icon-active" src="~assets/img/tabbar/category_active.png" alt="">
         <div slot="item-text">分类</div>
+      </tab-bar-item>
+      <tab-bar-item path='/cart' activeColor='orange'>
+        <img slot="item-icon" src="~assets/img/tabbar/cart.png" alt="">
+        <img slot="item-icon-active" src="~assets/img/tabbar/cart_active.png" alt="">
+        <div slot="item-text">购物车</div>
       </tab-bar-item>
       <tab-bar-item path='/profile' activeColor='orange'>
         <img slot="item-icon" src="~assets/img/tabbar/profile.png" alt="">
